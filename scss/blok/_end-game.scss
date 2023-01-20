@@ -1,0 +1,32 @@
+.end-game {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333a44;
+  color: #fff;
+
+  &__tugadi {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      width: 25%;
+    }
+
+    &__list {
+      width: 35%;
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

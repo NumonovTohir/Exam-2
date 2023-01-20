@@ -1,0 +1,130 @@
+.header {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  color: #fff;
+
+  &__nav {
+    width: 80%;
+    height: 13%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      width: 25%;
+    }
+
+    &__list {
+      width: 35%;
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: rgb(95, 90, 90);
+      }
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      width: 40%;
+
+      .btn1 {
+        height: 35px;
+        width: 180px;
+        border: none;
+
+        background: #fcb72b;
+        color: white;
+      }
+      .btn1:hover {
+        background: blue;
+      }
+      .btn1:active {
+        background: blueviolet;
+      }
+    }
+  }
+
+  &__team {
+    width: 100%;
+    height: 87%;
+    background-image: url(./../../images/Bitmap.jpg);
+    background-size: 1400px;
+
+    &__img {
+      h1 {
+        font-size: 55px;
+        width: 600px;
+        margin-left: 140px;
+      }
+      p {
+        font-size: 18px;
+        width: 550px;
+        padding: 50px;
+      }
+
+      .qwer {
+        display: flex;
+      }
+    }
+
+    .btn2 {
+      height: 40px;
+      width: 200px;
+      border: none;
+      margin-left: 150px;
+      background: #fcb72b;
+      color: white;
+    }
+    .btn2:hover {
+      background: blue;
+    }
+    .btn2:active {
+      background: blueviolet;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    width: 100%;
+
+    &__nav {
+      width: 100%;
+      height: 10%;
+
+      &__logo {
+        border: 1px solid;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      &__list {
+        display: none;
+      }
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+    }
+    &__team {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      &__img {
+        width: 100%;
+        .img {
+          display: none;
+        }
+      }
+    }
+  }
+}
